@@ -2,6 +2,7 @@
 - hosts: all
   remote_user: vagrant
   tasks:
-    - shell: echo "Hello World"
+    - name: Greet
+      shell: echo "Hello World"
 
 
