@@ -1,8 +1,8 @@
 ---
 - hosts: greeters
   remote_user: vagrant
-  vars:
-    name: "Yves"
+  vars_files:
+    - variables.yml
   tasks:
     - name: Create greeting container
       file:
