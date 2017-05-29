@@ -1,6 +1,8 @@
 ---
 - hosts: greeters
   remote_user: vagrant
+  vars:
+    name: "Yves"
   tasks:
     - name: Create greeting container
       file:
@@ -8,6 +10,6 @@
         state: touch
 
     - name: Greet
-      shell: echo "Hello World" > ~/greeting
+      shell: echo "Hello {{name}}" > ~/greeting
 
 
