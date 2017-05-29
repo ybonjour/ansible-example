@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: greeters
   remote_user: vagrant
   tasks:
     - name: Greet
