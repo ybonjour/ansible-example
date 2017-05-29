@@ -1,5 +1,6 @@
 ---
 - name: Greet
+  become: yes
   template:
     src: greeting_message.j2
-    dest: ~/greeting
+    dest: /var/greeting
