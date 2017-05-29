@@ -3,13 +3,7 @@
   remote_user: vagrant
   vars_files:
     - variables.yml
-  tasks:
-    - name: Create greeting container
-      file:
-        path: ~/greeting
-        state: touch
-
-    - name: Greet
-      shell: echo "Hello {{name}} on {{host}}" > ~/greeting
+  roles:
+    - greeter
 
 
